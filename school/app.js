@@ -1,5 +1,6 @@
 var express = require('express')
 var mongoose = require('mongoose')
+var path = require('path')
 
 mongoose.connect('mongodb://localhost/sample', (err) => {
     console.log(err ? err : 'database connected')
