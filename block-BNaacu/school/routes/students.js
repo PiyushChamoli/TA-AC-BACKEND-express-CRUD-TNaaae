@@ -6,15 +6,17 @@ router.get('/new', (req,res) => {
 })
 
 router.post('/', (req,res) => {
-    // create a student
+    res.send(req.body)
 })
 
 router.get('/', (req,res) => {
-    // get all students
+    res.render("students", { list: ["ankit", "suraj", "prashant", "ravi"] })
 })
 
 router.get('/:id', (req,res) => {
-    // get student by id
+    res.render("studentDetail", {
+        student: { name: "rahul", email: "rahul@altcampus.io" },
+    });
 })
 
 module.exports = router
