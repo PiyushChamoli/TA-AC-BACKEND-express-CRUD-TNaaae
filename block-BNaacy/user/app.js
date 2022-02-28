@@ -4,7 +4,7 @@ var userRoute = require('./routes/user')
 var path = require('path')
 
 // connect mongodb
-mongoose.connect('mongodb://localhost/user', (err) => {
+mongoose.connect('mongodb://localhost/users', (err) => {
     console.log(err ? err : 'connected to database')
 })
 
