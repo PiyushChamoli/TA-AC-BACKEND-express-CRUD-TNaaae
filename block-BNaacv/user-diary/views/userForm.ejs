@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        form {
+            margin-top: 90px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="/users" method="post">
+            <input type="text" name="name" placeholder="Enter your name">
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
