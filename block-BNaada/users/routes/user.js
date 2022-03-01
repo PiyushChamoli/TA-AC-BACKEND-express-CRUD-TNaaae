@@ -2,7 +2,7 @@ var express = require('express')
 var router = express.Router()
 var User = require('../models/User')
 
-router.get('/', (req,res) => {
+router.get('/', (req,res,next) => {
     User.find({}, (err, allUsers) => {
         if(err) return next(err)
         res.render('users', {users: allUsers})
@@ -13,7 +13,7 @@ router.get('/new', (req,res) => {
     res.render('userForm')
 })
 
-router.get('/:id', (req,res) => {
+router.get('/:id', (req,res,next) => {
     var id = req.params.id
     User.findById(id, (err,user) => {
         if (err) return next(err)

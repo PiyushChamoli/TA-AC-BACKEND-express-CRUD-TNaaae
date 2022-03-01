@@ -29,6 +29,10 @@ app.use((req,res) => {
     res.send('Page Not Found')
 })
 
+app.use((err,req,res) => {
+    res.send(err)
+})
+
 // add listener
 app.listen(3000, () => {
     console.log('server listening on port 3000')
