@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <title>User Form</title>
+</head>
+<body>
+    <main>
+        <form action="/users/new" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter Your Age">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" placeholder="Enter Your Address">
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter Your Bio"></textarea>
+            <label for="hobbies">Hobbies</label>
+            <input type="text" name="hobbies" id="hobbies" placeholder="Enter Your Hobbies">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
